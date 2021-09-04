@@ -8,6 +8,8 @@ Maimpage - allows the user to create, delete tasks, or mark then like 'done' and
 
 # Demo:
 
+![](demo-image.png)
+
 email: test@mail.com
 
 password: password
