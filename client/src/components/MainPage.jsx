@@ -225,7 +225,9 @@ const MainPage = () => {
               <Grid item xs={9}>
                 <div className={classes.task}>
                   <Typography>{index + 1}. </Typography>
-                  <Typography className={cls.join(' ')}>{todo.text}</Typography>
+                  <Typography className={cls.join(' ')}>
+                    {todo.text.charAt(0).toUpperCase() + todo.text.slice(1)}
+                  </Typography>
                 </div>
               </Grid>
               <Grid item xs={3} className={classes.icons}>
