@@ -19,11 +19,13 @@ password: password
 To get started you can simply clone the repo and install the dependencies in the root folder
 
 Steps: 
+
 Install	npm install
 
 Run	npm run dev
 
 Runs the app in the development mode.
+
 Open http://localhost:3000 to view it in the browser.
 
 # Application:
