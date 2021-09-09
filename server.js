@@ -1,8 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const path = require('path');
-
 const app = express();
+const dotenv = require('dotenv');
+dotenv.config();
 
 const PORT = process.env.PORT || 5000;
 
@@ -21,13 +22,10 @@ if (process.env.NODE_ENV === 'production') {
 
 async function start() {
   try {
-    await mongoose.connect(
-      'mongodb+srv://nizami-to-do-app:EjKNpRopnvBeRzU1@cluster0.wy4db.mongodb.net/to-do-app?retryWrites=true&w=majority',
-      {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-      },
-    );
+    await mongoose.connect(process.env.DB_URL, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
     app.listen(PORT, () => {
       console.log(`Server started on port ${PORT}`);
     });
