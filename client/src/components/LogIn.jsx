@@ -98,11 +98,6 @@ const LogIn = () => {
       if (!passwordValid) {
         return setError('Invalid password');
       }
-
-      // if (!validateEmail) {
-      //   return setError('This email does not have an account');
-      // }
-      console.log(validateEmail);
     } catch (e) {
       setError('Failed to log in');
     }
