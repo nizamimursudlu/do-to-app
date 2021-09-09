@@ -14,15 +14,17 @@ email: test@mail.com
 
 password: password
 
+https://todo-app-class31.herokuapp.com/login
+
 # Getting Started
 
 To get started you can simply clone the repo and install the dependencies in the root folder
 
-Steps: 
+Steps:
 
-Install	npm install
+Install npm install
 
-Run	npm run dev
+Run npm run dev
 
 Runs the app in the development mode.
 
@@ -46,7 +48,7 @@ Modules export/import
 
 # Libraries/Frameworks:
 
-materiar UI 
+materiar UI
 
 react-router-dom: The router components of react
 
@@ -63,4 +65,3 @@ mongoose: mongodb database library for nodejs
 bcryptjs: hashing library which is used to hash passwords in this project
 
 jsonwebtoken: JWT implementation library
-
